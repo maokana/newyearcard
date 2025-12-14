@@ -1,4 +1,5 @@
-function drawOmikuji() {
+// これでボタンから必ず呼べる関数になります
+window.drawOmikuji = function() {
   const omikuji = [
     "大吉 🌸 最高の一年になります！",
     "中吉 😊 良い流れが続きます",
@@ -7,9 +8,8 @@ function drawOmikuji() {
     "末吉 😐 後半に運気上昇",
     "凶 😅 無理せず慎重に"
   ];
-
-  const result = omikuji[Math.floor(Math.random() * omikuji.length)];
-  document.getElementById("result").textContent = result;
+  document.getElementById("result").textContent =
+    omikuji[Math.floor(Math.random() * omikuji.length)];
 }
 
 
