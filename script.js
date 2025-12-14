@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>初詣おみくじ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>あけましておめでとうございます</h1>
+
+  <img src="shrine.jpg" alt="神社" class="shrine">
+
+  <button onclick="drawOmikuji()">おみくじを引く</button>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
