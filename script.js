@@ -1,21 +1,15 @@
-alert("script.js は動いています");
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>初詣おみくじ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>あけましておめでとうございます</h1>
+function drawOmikuji() {
+  const omikuji = [
+    "大吉 🌸 最高の一年になります！",
+    "中吉 😊 良い流れが続きます",
+    "小吉 🙂 コツコツが大事",
+    "吉 😌 穏やかな一年",
+    "末吉 😐 後半に運気上昇",
+    "凶 😅 無理せず慎重に"
+  ];
 
-  <img src="shrine.jpg" alt="神社" class="shrine">
+  const result = omikuji[Math.floor(Math.random() * omikuji.length)];
+  document.getElementById("result").textContent = result;
+}
 
-  <button onclick="drawOmikuji()">おみくじを引く</button>
-
-  <p id="result"></p>
-
-  <script src="script.js"></script>
-</body>
-</html>
 
