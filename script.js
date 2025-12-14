@@ -1,3 +1,4 @@
+alert("script.js は動いています");
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,3 +18,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
